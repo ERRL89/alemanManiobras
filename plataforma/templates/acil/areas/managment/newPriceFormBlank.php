@@ -47,13 +47,24 @@
             <input type="text" class="form-control form-input" id="nombre" name="nombre" placeholder="Nombre/Razón Social" required>
             <div class="invalid-feedback">Introduce el nombre/razón social</div>
           </div>
-          <div class="col-md-3 mb-2">
+          <div class="col-md-2 mb-2">
             <input type="text" class="form-control form-input" placeholder="Telefono" id="telefono" name="telefono" required>
             <div class="invalid-feedback">Introduce telefono</div>
           </div>
-          <div class="col-md-4 mb-2">
+          <div class="col-md-3 mb-2">
             <input type="text" class="form-control form-input" placeholder="Email" id="email" name="email" required>
             <div class="invalid-feedback">Introduce email</div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <select class="form-select" name="placePrice" id="placePrice">
+                <option value="" selected disabled>Precios para:</option>
+                <option value="Monterrey">Monterrey</option>
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Walmart">Walmart</option>
+                <option value="Sears">Sears</option>
+                <option value="Sams">Sams</option>
+            </select>
+            <div class="invalid-feedback">Selecciona precios</div>
           </div>
         </div>
     </div>
@@ -205,6 +216,7 @@
             var nombre = $("#nombre").val()
             var telefono = $("#telefono").val()
             var email = $("#email").val()
+            var placePrice = $("#placePrice").val()
 
             //Valores de Primera Partida
             var typeService1 = $("#typeService1").val()
@@ -228,6 +240,7 @@
                 nombre: nombre,
                 telefono: telefono,
                 email: email,
+                placePrice:placePrice,
                 typeService1: typeService1,
                 costo1: costo1,
                 typeService2: typeService2,

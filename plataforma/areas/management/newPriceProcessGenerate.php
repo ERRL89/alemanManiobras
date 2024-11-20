@@ -22,9 +22,10 @@
     if(isset($_POST['fecha'])){ $fecha=$_POST['fecha']; }
 
     //Recibe información del cliente
-    if(isset($_POST['nombre']))  { $nombre=$_POST['nombre'];     }
-    if(isset($_POST['telefono'])){ $telefono=$_POST['telefono']; }
-    if(isset($_POST['email']))   { $email=$_POST['email'];       }
+    if(isset($_POST['nombre']))     { $nombre=$_POST['nombre'];        }
+    if(isset($_POST['telefono']))   { $telefono=$_POST['telefono'];    }
+    if(isset($_POST['email']))      { $email=$_POST['email'];          }
+    if(isset($_POST['placePrice'])) { $placePrice=$_POST['placePrice'];}
 
     //Recibe el numero de personas por partida
     if(isset($_POST['numPersona1']))  { $numPersona1=$_POST['numPersona1'];     }

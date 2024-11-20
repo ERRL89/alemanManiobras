@@ -25,9 +25,10 @@
     if(isset($_POST['fecha'])){ $fecha=$_POST['fecha']; }
 
     //Recibe información del cliente
-    if(isset($_POST['nombre']))  { $nombre=$_POST['nombre'];     }
-    if(isset($_POST['telefono'])){ $telefono=$_POST['telefono']; }
-    if(isset($_POST['email']))   { $email=$_POST['email'];       }
+    if(isset($_POST['nombre']))     { $nombre=$_POST['nombre'];        }
+    if(isset($_POST['telefono']))   { $telefono=$_POST['telefono'];    }
+    if(isset($_POST['email']))      { $email=$_POST['email'];          }
+    if(isset($_POST['placePrice'])) { $placePrice=$_POST['placePrice'];}
 
     //Recibe información de la primera partida de la cotización
     if(isset($_POST['typeService1']) && isset($_POST['costo1']) && isset($_POST['total'])){

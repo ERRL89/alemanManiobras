@@ -105,6 +105,12 @@ if($filePDF==1){
     }else{
         $reciboPDF->MultiCell($maxWidth, $lineHeight, $listService1, 0, 'L', 0, 1, '', '', true);
     }
+
+    // PLACEPRICE
+    $reciboPDF->SetFont('helvetica', '', 11);
+    $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+    $reciboPDF->SetXY(60, 141.8); // Posición x, posición y
+    $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
     
     // Costo 1
     $reciboPDF->SetFont('helvetica', '', 13);
@@ -155,6 +161,12 @@ if($filePDF==2){
     }else{
         $reciboPDF->MultiCell($maxWidth, $lineHeight, $listService1, 0, 'L', 0, 1, '', '', true);
     }
+
+    // PLACEPRICE
+    $reciboPDF->SetFont('helvetica', '', 11);
+    $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+    $reciboPDF->SetXY(60, 148.05); // Posición x, posición y
+    $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
 
     // Costo 1
     $reciboPDF->SetFont('helvetica', '', 13);
@@ -224,6 +236,12 @@ if($filePDF==3){
     }else{
         $reciboPDF->MultiCell($maxWidth, $lineHeight, $listService1, 0, 'L', 0, 1, '', '', true);
     }
+
+    // PLACEPRICE
+    $reciboPDF->SetFont('helvetica', '', 11);
+    $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+    $reciboPDF->SetXY(60, 163.2); // Posición x, posición y
+    $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
 
     // Costo 1
     $reciboPDF->SetFont('helvetica', '', 13);

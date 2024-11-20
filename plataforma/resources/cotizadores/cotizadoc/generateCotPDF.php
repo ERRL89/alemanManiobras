@@ -104,6 +104,13 @@ if($filePDF==1){
     else{
         $reciboPDF->Cell(0, 10, $typeService1, 0, 1, '');
     }
+
+    // PLACEPRICE
+    $reciboPDF->SetFont('helvetica', '', 11);
+    $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+    $reciboPDF->SetXY(60, 141.8); // Posición x, posición y
+    $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
+
     //PARTIDA DE COTIZACION 1
     // Service 1
     $reciboPDF->SetFont('helvetica', '', 11);
@@ -157,6 +164,12 @@ if($filePDF==2){
     else{
         $reciboPDF->Cell(0, 10, $typeService1, 0, 1, '');
     }
+
+    // PLACEPRICE
+    $reciboPDF->SetFont('helvetica', '', 11);
+    $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+    $reciboPDF->SetXY(60, 148.05); // Posición x, posición y
+    $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
     
     // Service 1
     $reciboPDF->SetFont('helvetica', '', 11);
@@ -240,6 +253,12 @@ if($filePDF==3){
         else{
             $reciboPDF->Cell(0, 10, $typeService1, 0, 1, '');
         }
+
+        // PLACEPRICE
+        $reciboPDF->SetFont('helvetica', '', 11);
+        $reciboPDF->SetTextColor(0, 0, 0); // Color blanco para el texto
+        $reciboPDF->SetXY(60, 163.2); // Posición x, posición y
+        $reciboPDF->Cell(0, 10, $placePrice, 0, 1, '');
         
         // Service 1
         $reciboPDF->SetFont('helvetica', '', 11);
